@@ -1,11 +1,13 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { useState } from 'react';
 
-const Counter:FunctionComponent<{ initial?: number }> = ({ initial = 0 }) => {
-  const [clicks, setClicks] = useState(initial);
-  return <>
-    <p>Counter: {clicks}</p>
-    <button onClick={() => setClicks(clicks+1)}>Increase</button>
-    <button onClick={() => setClicks(initial)}>Reset</button>
-  </>
+const Counter = () => {
+  const [clicks, setClicks] = useState(0);
+  return (
+    <>
+      <p>Counter: {clicks}</p>
+      <button onClick={() => setClicks(clicks+1)}>Increase</button>
+      <button onClick={() => setClicks(0)}>Reset</button>
+    </>
+  );
 }
 export default Counter;
