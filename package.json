@@ -2,10 +2,12 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thanh018.github.io/Test_HHG",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/gh-pages": "^3.0.0",
     "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.169",
     "@types/node": "^12.0.0",
@@ -29,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
